@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transporte  JNZ</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+<body>
+    <!-- ENCABEZADO -->
+    <header>
+        <h1>Transporte JNZ</h1>
+          <p>Transportes JNZ conecta negocios de manera segura, confianza sobre ruedas.</p>
+        
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#nosotros">Acerca de Nosotros</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+    <!-- Tabla-->
+    <section id="cotizacion" class="seccion">
+    <h2>Cotiza tu viaje</h2>
+    <form class="form-cotizacion">
+        <table>
+            <tr>
+                <td><label for="nombre">Nombre:</label></td>
+                <td><input type="text" id="nombre" name="nombre" required></td>
+            </tr>
+            <tr>
+                <td><label for="origen">Origen:</label></td>
+                <td><input type="text" id="origen" name="origen" required></td>
+            </tr>
+            <tr>
+                <td><label for="destino">Destino:</label></td>
+                <td><input type="text" id="destino" name="destino" required></td>
+            </tr>
+            <tr>
+                <td><label for="servicio">Tipo de servicio:</label></td>
+                <td>
+                    <select id="servicio" name="servicio" required>
+                        <option value="">Seleccione...</option>
+                        <option value="personas">Transporte de carga refrigerada</option>
+                        <option value="carga">Transporte de carga seca</option>
+                        <option value="paqueteria">Paquetería</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="fecha">Fecha:</label></td>
+                <td><input type="date" id="fecha" name="fecha" required></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align:center;">
+                    <button type="submit">Solicitar Cotización</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</section>
+
+    <!-- SECCIÓN INICIO -->
+    <section id="inicio" class="seccion">
+        <h2>Bienvenido a Transporte JNZ</h2>
+        <p>Transportes JNZ existe para brindar soluciones de transporte seguras, confiables y accesibles, contribuyendo a que las personas y empresas conecten de manera eficiente. Más allá de la rentabilidad económica, buscamos generar confianza y comodidad en nuestros clientes.</p>
+        <section class="Imagenes ">
+        <img src="/Proyecto/Imagenes/Imagen1.jpg" alt="Camiónes de transporte" class="imagen">
+        <img src="/Proyecto/Logo/Logo.jpg" alt="Logo" class="imagen2">
+        <img src="/Proyecto/Imagenes/Imagen2.jpg" alt="Camiónes de transporte" class="imagen3"
+        </section>
+    </section>
+
+    <!-- SECCIÓN NOSOTROS -->
+    <section id="nosotros" class="seccion nosotros">
+        <h2>Acerca de Nosotros</h2>
+        <p>Ofrecer servicios de transporte innovadores, confiables y adaptados a las necesidades de nuestros clientes, utilizando tecnología avanzada para garantizar la seguridad y seguimiento de paquetería, carga refrigerada y carga seca.</p>
+        <p><strong>Valores y necesidades:</strong></p>
+            <ul><!--Lista desordenada-->
+            <li>- Seguridad: Garantizamos que los viajes y envíos lleguen a destino en óptimas condiciones.</li>
+            <li> Confiabilidad: Puntualidad y transparencia en nuestros servicios.</li>
+            <li>-Empatía: Atención personalizada que comprende las necesidades de cada cliente. </li>
+            <li>-Sostenibilidad: Compromiso con prácticas responsables que cuidan el entorno.</li>
+        </ul>   
+        <p><strong>Valores:</strong> Seguridad, confiabilidad, empatía y sostenibilidad.</p>
+    </section>
+
+    <!-- SECCIÓN SERVICIOS -->
+    <section id="servicios" class="seccion">
+        <h2>Servicios</h2>
+        <div class="servicios">
+            <div class="cuadro">
+                <img src="/Proyecto/Imagenes/cajarefrigerada.jpg" alt="Transporte de Carga Refrigerada">
+                <h3>Transporte de Carga Refrigerada</h3>
+                <p>Transportamos tu carga con la temperatura ideal.</p>
+            </div>
+            <div class="cuadro">
+                <img src="/Proyecto/Imagenes/CajaSeca.jpg" alt="Transporte de Carga Seca">
+                <h3>Transporte de Carga Seca</h3>
+                <p>Movemos tus productos con eficiencia, puntualidad y cuidado.</p>
+            </div>
+            <div class="cuadro">
+                <img src="/Proyecto/Imagenes/Paqueteria.jpg" alt="Paquetería">
+                <h3>Servicio de Paquetería</h3>
+                <p>Entrega rápida y segura para tus envíos personales o empresariales.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CONTACTO -->
+    <section id="contacto" class="seccion nosotros">
+        <h2>Contacto</h2>
+        <p>Teléfono: 7712682233</p>
+        <p>Correo: TransporteJNZ@gmail.com</p>
+        <p>Ubicación: Av. Eulaliomorales Ruiz, Col. Las Flores, Calle Zempazuchilt #1, Atotonilco el Grande Hgo.</p>
+    
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>© 2025 Transporte JNZ | Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
