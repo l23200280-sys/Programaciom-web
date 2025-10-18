@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transporte JNZ</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/Proyecto/CSS/estilos.css">
+</head>
+<body>
+
+  <!-- NAVBAR RESPONSIVA -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="/Proyecto/Logo/Logo.jpg" alt="Logo JNZ" class="logo me-2">
+        <span class="fw-bold text-warning">Transportes JNZ</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu2" aria-controls="menu2" aria-expanded="false" aria-label="Menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="menu2">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link text-warning fw-semibold" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link text-warning fw-semibold" href="#nosotros">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link text-warning fw-semibold" href="#servicios">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link text-warning fw-semibold" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ESLOGAN -->
+  <section class="text-center bg-light py-4">
+    <p class="lead text-secondary fw-semibold">Transportes JNZ conecta negocios de manera segura, confianza sobre ruedas.</p>
+  </section>
+
+  <!-- COTIZACIÓN -->
+  <section id="cotizacion" class="container py-5 text-center">
+    <h2 class="mb-4 text-primary fw-bold">Cotiza tu viaje</h2>
+    <form class="form-cotizacion shadow p-4 bg-white rounded">
+      <div class="row g-3">
+        <div class="col-md-6">
+          <label class="form-label fw-semibold">Nombre:</label>
+          <input type="text" class="form-control" required>
+        </div>
+        <div class="col-md-6">
+          <label class="form-label fw-semibold">Origen:</label>
+          <input type="text" class="form-control" required>
+        </div>
+        <div class="col-md-6">
+          <label class="form-label fw-semibold">Destino:</label>
+          <input type="text" class="form-control" required>
+        </div>
+        <div class="col-md-6">
+          <label class="form-label fw-semibold">Tipo de servicio:</label>
+          <select class="form-select" required>
+            <option value="">Seleccione...</option>
+            <option>Transporte de carga refrigerada</option>
+            <option>Transporte de carga seca</option>
+            <option>Paquetería</option>
+          </select>
+        </div>
+        <div class="col-12">
+          <label class="form-label fw-semibold">Fecha:</label>
+          <input type="date" class="form-control" required>
+        </div>
+      </div>
+      <button class="btn btn-primary mt-4 w-50 fw-semibold">Solicitar Cotización</button>
+    </form>
+  </section>
+
+  <!-- SECCIÓN INICIO -->
+  <section id="inicio" class="seccion bg-light">
+    <div class="container py-5">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h2 class="text-primary fw-bold mb-3">Bienvenido a Transporte JNZ</h2>
+          <p class="text-secondary">
+            En <strong>Transportes JNZ</strong> brindamos soluciones seguras, confiables y accesibles para conectar personas y empresas de forma eficiente. 
+            Nuestro compromiso es ofrecer puntualidad, confianza y comodidad en cada viaje.
+          </p>
+        </div>
+        <div class="col-lg-6 text-center">
+          <img src="/Proyecto/Imagenes/Imagen1.jpg" alt="Camión de transporte" class="img-fluid rounded sombra-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN NOSOTROS -->
+  <section id="nosotros" class="seccion text-white">
+    <div class="container py-5">
+      <div class="row align-items-center flex-lg-row-reverse">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h2 class="fw-bold mb-3">Acerca de Nosotros</h2>
+          <p>
+            Ofrecemos servicios de transporte innovadores y confiables, adaptados a las necesidades de nuestros clientes. 
+            Utilizamos tecnología avanzada para garantizar la seguridad y el seguimiento de paquetería, carga refrigerada y carga seca.
+          </p>
+          <ul class="list-unstyled mt-3">
+            <li>🚛 <strong>Seguridad:</strong> Viajes y envíos en óptimas condiciones.</li>
+            <li>⏱️ <strong>Confiabilidad:</strong> Puntualidad y transparencia.</li>
+            <li>💬 <strong>Empatía:</strong> Atención personalizada.</li>
+            <li>🌱 <strong>Sostenibilidad:</strong> Compromiso con el entorno.</li>
+          </ul>
+        </div>
+        <div class="col-lg-6 text-center">
+          <img src="/Proyecto/Imagenes/Imagen2.jpg" alt="Camión en carretera" class="img-fluid rounded sombra-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOTÓN PARA MOSTRAR/OCULTAR RELATORÍA -->
+  <div class="text-center my-4">
+    <button id="toggleRelatoria" class="btn btn-warning fw-semibold">Conoce mas</button>
+  </div>
+
+  <!-- SECCIÓN RELATORÍA (20 párrafos + CTA) -->
+  <section id="relatoria" class="seccion bg-light py-5" style="display:none;">
+    <div class="container">
+      <h2 class="text-primary fw-bold mb-4">Sobre Transporte JNZ</h2>
+
+      <p>Transportes JNZ es una empresa dedicada a ofrecer soluciones logísticas eficientes y seguras.</p>
+      <p>Nuestro objetivo es conectar negocios y personas de manera confiable y puntual.</p>
+      <p>Contamos con flota especializada para carga refrigerada, carga seca y paquetería.</p>
+      <p>Nuestros conductores están capacitados en seguridad vial y atención al cliente.</p>
+      <p>Utilizamos tecnología de rastreo para garantizar transparencia en cada envío.</p>
+      <p>La satisfacción del cliente es nuestra prioridad en todos los servicios.</p>
+      <p>Adoptamos prácticas sostenibles para reducir nuestro impacto ambiental.</p>
+      <p>Innovamos constantemente en procesos y servicios logísticos.</p>
+      <p>Fomentamos relaciones duraderas con nuestros socios y clientes.</p>
+      <p>Nos enfocamos en ofrecer soluciones personalizadas según la necesidad de cada cliente.</p>
+      <p>Mantenemos un compromiso firme con la seguridad de la carga y la puntualidad de las entregas.</p>
+      <p>Nuestra atención al cliente es personalizada y eficiente.</p>
+      <p>Realizamos seguimiento en tiempo real para mayor confianza de nuestros usuarios.</p>
+      <p>Incorporamos tecnología avanzada en nuestros vehículos y rutas.</p>
+      <p>Promovemos una cultura de responsabilidad y ética profesional.</p>
+      <p>Nos adaptamos a las necesidades cambiantes del mercado y del cliente.</p>
+      <p>Garantizamos transparencia en precios y servicios.</p>
+      <p>Trabajamos con estándares de calidad internacionales.</p>
+      <p>Apoyamos iniciativas de responsabilidad social y ambiental.</p>
+      <p>Buscamos siempre la excelencia en cada servicio ofrecido.</p>
+    </div>
+  </section>
+
+  <!-- SECCIÓN SERVICIOS -->
+  <section id="servicios" class="seccion bg-light">
+    <div class="container text-center">
+      <h2 class="text-primary fw-bold mb-4">Servicios</h2>
+      <div class="row justify-content-center g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="/Proyecto/Imagenes/cajarefrigerada.jpg" class="card-img-top" alt="Refrigerada">
+            <div class="card-body">
+              <h5 class="card-title text-primary">Carga Refrigerada</h5>
+              <p class="card-text">Transportamos tu carga con la temperatura ideal.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="/Proyecto/Imagenes/CajaSeca.jpg" class="card-img-top" alt="Carga seca">
+            <div class="card-body">
+              <h5 class="card-title text-primary">Carga Seca</h5>
+              <p class="card-text">Movemos tus productos con eficiencia, puntualidad y cuidado.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="/Proyecto/Imagenes/Paqueteria.jpg" class="card-img-top" alt="Paquetería">
+            <div class="card-body">
+              <h5 class="card-title text-primary">Paquetería</h5>
+              <p class="card-text">Entrega rápida y segura para tus envíos personales o empresariales.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN CONTACTO -->
+  <section id="contacto" class="seccion bg-primary text-white text-center">
+    <h2 class="fw-bold mb-3">Contacto</h2>
+    <p>📞 Teléfono: 771 268 2233</p>
+    <p>📧 Correo: TransporteJNZ@gmail.com</p>
+    <p>📍 Ubicación: Av. Eulalio Morales Ruiz, Col. Las Flores, Calle Zempazuchilt #1, Atotonilco el Grande, Hgo.</p>
+    <style>
+    iframe {
+            width: 100%;
+            height: 450px;
+            border: 0;
+            border-radius: 10px;
+        }
+    </style>
+    <div class="container my-5">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <p class="text-muted">Este mapa muestra la ubicación de nuestra empreza:</p>
+                <iframe src="https://www.google.com/maps?q=20.280923,-98.651920&z=17&output=embed" allowfullscreen 
+                loading="lazy"></iframe>
+
+            </div>
+        </div>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">© 2025 Transporte JNZ | Todos los derechos reservados</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    const boton = document.getElementById('toggleRelatoria');
+    const seccion = document.getElementById('relatoria');
+
+    boton.addEventListener('click', () => {
+      if(seccion.style.display === 'none' || seccion.style.display === '') {
+        seccion.style.display = 'block';
+        boton.textContent = 'Ocultar Información de la Empresa';
+      } else {
+        seccion.style.display = 'none';
+        boton.textContent = 'Conoce mas';
+      }
+    });
+  </script>
+
+</body>
+</html>
+
